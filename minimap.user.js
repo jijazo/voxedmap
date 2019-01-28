@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Mapa Argentino
+// @name         Voxed
 // @namespace    http://tampermonkey.net/
 // @version      1.1
 // @description  MapaArgentino.io

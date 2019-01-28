@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Voxed
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  MapaArgentino.io
 // @author       ~~~
 // @match        https://pixelzone.io/*
@@ -13,7 +13,8 @@
 // ==/UserScript==
 
 Number.prototype.between = function(a, b) {
-  var min = Math.min.apply(Math, [a, b]
+  var min = Math.min.apply(Math, [a, b]),
+    max = Math.max.apply(Math, [a, b]);
   return this > min && this < max;
 };
 var range = 25;
@@ -51,7 +52,7 @@ window.addEventListener('load', function () {
     //Cachebreaker to force refresh
     cachebreaker = null;
 
-vers = "Arstotzka";
+vers = "ArgetinaMap";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
@@ -392,4 +393,3 @@ function findCoor() {
     });*/
     coorDOM = document.getElementById("coords");
 }
-
